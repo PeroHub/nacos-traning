@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Student Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#logout" id="logoutBtn">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="profile" class="dashboard-section">
+        <div class="container">
+            <h2>Profile</h2>
+            <div class="profile-card">
+                <img src="https://th.bing.com/th/id/OIP.xyyxfqWIFl-KOOyZVnMq2wHaFS?w=229&h=180&c=7&r=0&o=5&pid=1.7" alt="Profile Picture">
+                <div class="profile-info">
+                    <h3>John Doe</h3>
+                    <p><strong>Email:</strong> john.doe@example.com</p>
+                    <p><strong>Enrollment ID:</strong> 123456789</p>
+                    <p><strong>Major:</strong> Computer Science</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="dashboard-section">
+        <div class="container">
+            <h2>Available Courses</h2>
+            <div class="available-courses-list">
+                <div class="course-option">
+                    <input type="checkbox" id="course1" data-course="Introduction to Programming">
+                    <label for="course1">Introduction to Programming</label>
+                </div>
+                <div class="course-option">
+                    <input type="checkbox" id="course2" data-course="Data Structures and Algorithms">
+                    <label for="course2">Data Structures and Algorithms</label>
+                </div>
+                <div class="course-option">
+                    <input type="checkbox" id="course3" data-course="Web Development">
+                    <label for="course3">Web Development</label>
+                </div>
+            </div>
+
+            <h2>Selected Courses</h2>
+            <div id="selected-courses" class="courses-list">
+                <!-- Selected courses will be displayed here -->
+            </div>
+            <button id="printBtn">Print Selected Courses</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 School Name. All rights reserved.</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
